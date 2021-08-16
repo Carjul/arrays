@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Captura de Datos</title>
+    <style>
+        body {
+            background-color: burlywood;
+            font-style: oblique;
+        }
+
+        table {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>EJEMPLO CAPTURA DE DATOS DESDE TABLAS</h1>
+        <hr size="30" color="blue">
+        <br>
+        <table border="5">
+            <th>Descripción</th>
+            <th>Valor</th>
+            <tbody>
+                <tr>
+                    <td>Nombres</td>
+                    <td><input type="text" name="nom" id="nom" autofocus></td>
+                </tr>
+                <tr>
+                    <td>Apellidos</td>
+                    <td><input type="text" name="ape" id="ape"></td>
+                </tr>
+                <tr>
+                    <td>Nota 1</td>
+                    <td><input type="text" name="n1" id="n1"></td>
+                </tr>
+                <tr>
+                    <td>Nota 2</td>
+                    <td><input type="text" name="n2" id="n2"></td>
+                </tr>
+                <tr>
+                    <td>Nota 3</td>
+                    <td><input type="text" name="n3" id="n3"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="5">
+            <tr>
+                <td><button onclick="agregar()">AGREGAR</button></td>
+            </tr>
+        </table>
+        <br>
+        <h1>LISTADO DE ESTUDIANTES</h1>
+        <hr size="15" color="blue">
+        <br>
+        <!-- table -->
+        <table border="5">
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Nota Final</th>
+            <th>Estado</th>
+            <th>Reconocimiento</th>
+            <tbody id="cuerpo">
+
+            </tbody>
+        </table>
+    </center>
+    <script src="Ejemplo1.js"></script>
+</body>
+
+</html>
